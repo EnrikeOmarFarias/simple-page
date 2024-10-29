@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --fuenteprincipal: "Open Sans", sans-serif;
+}
+
+body {
+  font-family: var(--fuenteprincipal);
+  background: url(./img/fondo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contenedor {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  margin-right: 2rem;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  background-color: #fff;
+  padding: 2rem;
+  width: 70%;
+}
+
+.thumb {
+  margin-bottom: 2rem;
+}
+
+.thumb img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.h2 {
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.parrafo {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.aside {
+  width: 30%;
+  background-color: #537dca;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.ad {
+  font-size: 3rem;
+  background-color: #4264ae;
+  text-align: center;
+  color: #fff;
+  padding: 5rem 0;
+  border-radius: 0.5rem;
+}
+
+.footer {
+  margin: 2rem 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.redes-sociales a {
+  text-decoration: underline;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.redes-sociales a:hover {
+  text-decoration: none;
+}
+
+.autor {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .main {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .aside {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .ad {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .menu {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .menu a {
+    margin: 0 2rem;
+  }
+
+  .logo {
+    margin-bottom: 2rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .autor {
+    order: 2;
+  }
+
+  .footer .redes-sociales {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .aside {
+    display: none;
+  }
+}
